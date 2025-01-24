@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             ReportGrid = new DataGridView();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)ReportGrid).BeginInit();
             SuspendLayout();
             // 
@@ -36,20 +37,33 @@
             // 
             ReportGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             ReportGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            ReportGrid.Location = new Point(32, 12);
+            ReportGrid.Location = new Point(32, 42);
             ReportGrid.Name = "ReportGrid";
             ReportGrid.RowHeadersWidth = 51;
-            ReportGrid.Size = new Size(1080, 526);
+            ReportGrid.Size = new Size(1080, 496);
             ReportGrid.TabIndex = 0;
             ReportGrid.CellContentClick += ReportGrid_CellContentClick;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.Red;
+            button6.Location = new Point(32, 5);
+            button6.Name = "button6";
+            button6.Size = new Size(43, 31);
+            button6.TabIndex = 48;
+            button6.Text = "<";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // Reports
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1134, 553);
+            Controls.Add(button6);
             Controls.Add(ReportGrid);
             Name = "Reports";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Reports";
             Load += Reports_Load;
             ((System.ComponentModel.ISupportInitialize)ReportGrid).EndInit();
@@ -59,5 +73,6 @@
         #endregion
 
         private DataGridView ReportGrid;
+        private Button button6;
     }
 }

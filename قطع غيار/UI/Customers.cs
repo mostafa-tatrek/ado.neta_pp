@@ -30,7 +30,7 @@ namespace UI
 
         private void CustomersGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -197,6 +197,13 @@ namespace UI
                 CAddress.Text = customer.Address;
                 CPhone.Text = customer.Phone;
             }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Show();
+            this.Hide();
         }
     }
 }

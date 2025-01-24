@@ -46,6 +46,7 @@
             label6 = new Label();
             CategoriesComb = new ComboBox();
             SuppliersComb = new ComboBox();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)PArtsGrid).BeginInit();
             SuspendLayout();
             // 
@@ -195,10 +196,10 @@
             PArtsGrid.AllowUserToResizeRows = false;
             PArtsGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             PArtsGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            PArtsGrid.Location = new Point(12, 11);
+            PArtsGrid.Location = new Point(3, 37);
             PArtsGrid.Name = "PArtsGrid";
             PArtsGrid.RowHeadersWidth = 51;
-            PArtsGrid.Size = new Size(634, 525);
+            PArtsGrid.Size = new Size(643, 499);
             PArtsGrid.TabIndex = 28;
             PArtsGrid.CellContentClick += PArtsGrid_CellContentClick;
             // 
@@ -228,12 +229,24 @@
             SuppliersComb.Size = new Size(268, 28);
             SuppliersComb.TabIndex = 46;
             // 
+            // button6
+            // 
+            button6.BackColor = Color.Red;
+            button6.Location = new Point(3, 0);
+            button6.Name = "button6";
+            button6.Size = new Size(43, 31);
+            button6.TabIndex = 47;
+            button6.Text = "<";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
+            // 
             // InsertParts
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonFace;
             ClientSize = new Size(1068, 553);
+            Controls.Add(button6);
             Controls.Add(SuppliersComb);
             Controls.Add(CategoriesComb);
             Controls.Add(label6);
@@ -253,6 +266,7 @@
             Controls.Add(label2);
             Controls.Add(PArtsGrid);
             Name = "InsertParts";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "InsertParts";
             Load += InsertParts_Load;
             ((System.ComponentModel.ISupportInitialize)PArtsGrid).EndInit();
@@ -281,5 +295,6 @@
         private Label label6;
         private ComboBox CategoriesComb;
         private ComboBox SuppliersComb;
+        private Button button6;
     }
 }
