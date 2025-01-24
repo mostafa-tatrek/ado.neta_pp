@@ -1,0 +1,14 @@
+C:\Users\CONNECT\source\repos\قطع غيار\DataAccessLAyer\bin\Debug\net8.0\DataAccessLAyer.dll.config
+C:\Users\CONNECT\source\repos\قطع غيار\DataAccessLAyer\bin\Debug\net8.0\DataAccessLAyer.deps.json
+C:\Users\CONNECT\source\repos\قطع غيار\DataAccessLAyer\bin\Debug\net8.0\DataAccessLAyer.dll
+C:\Users\CONNECT\source\repos\قطع غيار\DataAccessLAyer\bin\Debug\net8.0\DataAccessLAyer.pdb
+C:\Users\CONNECT\source\repos\قطع غيار\DataAccessLAyer\obj\Debug\net8.0\DataAccessLAyer.csproj.AssemblyReference.cache
+C:\Users\CONNECT\source\repos\قطع غيار\DataAccessLAyer\obj\Debug\net8.0\DataAccessLAyer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CONNECT\source\repos\قطع غيار\DataAccessLAyer\obj\Debug\net8.0\DataAccessLAyer.AssemblyInfoInputs.cache
+C:\Users\CONNECT\source\repos\قطع غيار\DataAccessLAyer\obj\Debug\net8.0\DataAccessLAyer.AssemblyInfo.cs
+C:\Users\CONNECT\source\repos\قطع غيار\DataAccessLAyer\obj\Debug\net8.0\DataAccessLAyer.csproj.CoreCompileInputs.cache
+C:\Users\CONNECT\source\repos\قطع غيار\DataAccessLAyer\obj\Debug\net8.0\DataAccessLAyer.sourcelink.json
+C:\Users\CONNECT\source\repos\قطع غيار\DataAccessLAyer\obj\Debug\net8.0\DataAccessLAyer.dll
+C:\Users\CONNECT\source\repos\قطع غيار\DataAccessLAyer\obj\Debug\net8.0\refint\DataAccessLAyer.dll
+C:\Users\CONNECT\source\repos\قطع غيار\DataAccessLAyer\obj\Debug\net8.0\DataAccessLAyer.pdb
+C:\Users\CONNECT\source\repos\قطع غيار\DataAccessLAyer\obj\Debug\net8.0\ref\DataAccessLAyer.dll
