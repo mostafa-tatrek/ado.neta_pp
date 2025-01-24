@@ -17,5 +17,7 @@ namespace BusinessLogicLAyer.Entities
         public int Price { get; set; }
         public int SuplierID { get; set; }
 
+        public int CategoryID { get; set; }
+
     }
 }

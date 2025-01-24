@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj": {}
+    "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj": {
+    "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj",
+        "projectUniqueName": "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj",
         "projectName": "DataAccessLAyer",
-        "projectPath": "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj",
+        "projectPath": "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj",
         "packagesPath": "C:\\Users\\CONNECT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\DataAccessLAyer\\obj\\",
+        "outputPath": "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\DataAccessLAyer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CONNECT\\AppData\\Roaming\\NuGet\\NuGet.Config",

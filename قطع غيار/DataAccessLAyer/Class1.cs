@@ -92,30 +92,124 @@ namespace Data_Access_Layer
         {
             SqlDataAdapter adapter = new SqlDataAdapter();
             SqlCommand insertCommand = new SqlCommand(
-                @"INSERT INTO Customers (CustomerName, Adress, Phone, Email) 
+                @"INSERT INTO Customers (CustomerName, CustomerAddress, CustomerPhone, CustomerEmail) 
           VALUES (@CustomerName, @CustomerAddress, @CustomerPhone, @CustomerEmail)",
                 sql);
             insertCommand.Parameters.Add("@CustomerName", SqlDbType.NVarChar, 100, "CustomerName");
-            insertCommand.Parameters.Add("@CustomerAddress", SqlDbType.NVarChar, 200, "Adress");
-            insertCommand.Parameters.Add("@CustomerPhone", SqlDbType.NVarChar, 15, "Phone");
-            insertCommand.Parameters.Add("@CustomerEmail", SqlDbType.NVarChar, 100, "Email");
+            insertCommand.Parameters.Add("@CustomerAddress", SqlDbType.NVarChar, 200, "CustomerAddress");
+            insertCommand.Parameters.Add("@CustomerPhone", SqlDbType.NVarChar, 15, "CustomerPhone");
+            insertCommand.Parameters.Add("@CustomerEmail", SqlDbType.NVarChar, 100, "CustomerEmail");
             SqlCommand updateCommand = new SqlCommand(
                 @"UPDATE Customers 
           SET CustomerName = @CustomerName, 
-              Adress = @CustomerAddress, 
-              Phone = @CustomerPhone, 
-              Email = @CustomerEmail 
+              CustomerAddress = @CustomerAddress, 
+              CustomerPhone = @CustomerPhone, 
+              CustomerEmail = @CustomerEmail 
           WHERE CustomerID = @CustomerID",
                 sql);
             updateCommand.Parameters.Add("@CustomerID", SqlDbType.Int, 0, "CustomerID");
             updateCommand.Parameters.Add("@CustomerName", SqlDbType.NVarChar, 100, "CustomerName");
-            updateCommand.Parameters.Add("@CustomerAddress", SqlDbType.NVarChar, 200, "Adress");
-            updateCommand.Parameters.Add("@CustomerPhone", SqlDbType.NVarChar, 15, "Phone");
-            updateCommand.Parameters.Add("@CustomerEmail", SqlDbType.NVarChar, 100, "Email");
+            updateCommand.Parameters.Add("@CustomerAddress", SqlDbType.NVarChar, 200, "CustomerAddress");
+            updateCommand.Parameters.Add("@CustomerPhone", SqlDbType.NVarChar, 15, "CustomerPhone");
+            updateCommand.Parameters.Add("@CustomerEmail", SqlDbType.NVarChar, 100, "CustomerEmail");
             SqlCommand deleteCommand = new SqlCommand(
                 @"DELETE FROM Customers WHERE CustomerID = @CustomerID",
                 sql);
             deleteCommand.Parameters.Add("@CustomerID", SqlDbType.Int, 0, "CustomerID");
+            adapter.InsertCommand = insertCommand;
+            adapter.UpdateCommand = updateCommand;
+            adapter.DeleteCommand = deleteCommand;
+
+            return adapter;
+        }
+        public static SqlDataAdapter GetpPartsDataAdapter()
+        {
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            SqlCommand insertCommand = new SqlCommand(
+                @"INSERT INTO Parts ( PartName,  Price,  Quantitiy,SuppliersID ) 
+                  VALUES (@PartName, @Price, @Quantitiy, @SuppliersID)",
+                 sql);
+            insertCommand.Parameters.Add("@PartName", SqlDbType.NVarChar, 100, "PartName");
+            insertCommand.Parameters.Add("@Price", SqlDbType.Decimal, 10, "Price");
+            insertCommand.Parameters.Add("@Quantitiy", SqlDbType.Int,0, "Quantitiy");
+            insertCommand.Parameters.Add("@SuppliersID", SqlDbType.Int, 0, "SuppliersID");
+            SqlCommand updateCommand = new SqlCommand(
+                @"UPDATE Parts 
+          SET PartName = @PartName, 
+              Price = @Price, 
+              Quantitiy = @Quantitiy, 
+              SuppliersID = @SuppliersID 
+          WHERE  PartID = @ PartID",
+                sql);
+            updateCommand.Parameters.Add("@PartID", SqlDbType.Int, 0, "PartID");
+            updateCommand.Parameters.Add("@PartName", SqlDbType.NVarChar, 100, "PartName");
+            updateCommand.Parameters.Add("@Price", SqlDbType.Decimal, 10, "Price");
+            updateCommand.Parameters.Add("@Quantitiy", SqlDbType.Int, 0, "Quantitiy");
+            updateCommand.Parameters.Add("@SuppliersID", SqlDbType.Int, 0, "SuppliersID");
+            SqlCommand deleteCommand = new SqlCommand(
+                @"DELETE FROM Parts WHERE PartID = @PartID",
+                sql);
+            deleteCommand.Parameters.Add("@PartID", SqlDbType.Int, 0, "PartID");
+            adapter.InsertCommand = insertCommand;
+            adapter.UpdateCommand = updateCommand;
+            adapter.DeleteCommand = deleteCommand;
+
+            return adapter;
+        }
+        public static SqlDataAdapter GetInvoicesDataAdapter()
+        {
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            SqlCommand insertCommand = new SqlCommand(
+                @"INSERT INTO Invoices (Invoicedate, CustomerID) 
+                VALUES (@Invoicedate, @CustomerID)",
+                sql);
+            insertCommand.Parameters.Add("@Invoicedate", SqlDbType.Date, 100, "Invoicedate");
+            insertCommand.Parameters.Add("@CustomerID", SqlDbType.Int, 200, "CustomerID");
+            SqlCommand updateCommand = new SqlCommand(
+                @"UPDATE Invoices 
+                SET Invoicedate = @Invoicedate, 
+               CustomerID = @CustomerID, 
+              WHERE InvoicesID = @InvoicesID",
+                sql);
+            updateCommand.Parameters.Add("@Invoicedate", SqlDbType.Date, 100, "Invoicedate");
+            updateCommand.Parameters.Add("@CustomerID", SqlDbType.Int, 100, "CustomerID");
+            SqlCommand deleteCommand = new SqlCommand(
+                @"DELETE FROM Invoices WHERE InvoicesID = @InvoicesID",
+                sql);
+            deleteCommand.Parameters.Add("@InvoicesID", SqlDbType.Int, 0, "InvoicesID");
+            adapter.InsertCommand = insertCommand;
+            adapter.UpdateCommand = updateCommand;
+            adapter.DeleteCommand = deleteCommand;
+
+            return adapter;
+        }
+        public static SqlDataAdapter GetInvoices_DetailsAdapter()
+        {
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            SqlCommand insertCommand = new SqlCommand(
+                @"INSERT INTO Invoices_Details (TotelPrice, Quantitiy,PartID,InvoicesID) 
+                VALUES (@TotelPrice, @Quantitiy,@PartID,InvoicesID)",
+                sql);
+            insertCommand.Parameters.Add("@TotelPrice", SqlDbType.Decimal, 100, "TotelPrice");
+            insertCommand.Parameters.Add("@Quantitiy", SqlDbType.Int, 200, "Quantitiy");
+            insertCommand.Parameters.Add("@PartID", SqlDbType.Int, 100, "PartID");
+            insertCommand.Parameters.Add("@InvoicesID", SqlDbType.Int, 200, "InvoicesID");
+            SqlCommand updateCommand = new SqlCommand(
+                @"UPDATE Invoices_Details 
+                SET TotelPrice = @TotelPrice, 
+               Quantitiy = @Quantitiy, 
+                InvoicesID = @InvoicesID,
+                 PartID = @PartID
+              WHERE DeatailsID = @DeatailsID",
+                sql);
+            updateCommand.Parameters.Add("@TotelPrice", SqlDbType.Decimal, 100, "TotelPrice");
+            updateCommand.Parameters.Add("@Quantitiy", SqlDbType.Int, 100, "Quantitiy");
+            updateCommand.Parameters.Add("@InvoicesID", SqlDbType.Decimal, 100, "InvoicesID");
+            updateCommand.Parameters.Add("@PartID", SqlDbType.Int, 100, "PartID");
+            SqlCommand deleteCommand = new SqlCommand(
+                @"DELETE FROM Invoices_Details WHERE DeatailsID = @DeatailsID",
+                sql);
+            deleteCommand.Parameters.Add("@DeatailsID", SqlDbType.Int, 0, "DeatailsID");
             adapter.InsertCommand = insertCommand;
             adapter.UpdateCommand = updateCommand;
             adapter.DeleteCommand = deleteCommand;
@@ -154,6 +248,47 @@ where SuppliersID = @ID",
             return adapter;
 
         }
+        public static SqlDataAdapter GetPartsAdapter()
+        {
+            
+            SqlDataAdapter adapter = new SqlDataAdapter();
+
+            
+            SqlCommand insertCommand = new SqlCommand(
+                @"INSERT INTO Parts (PartName, Price, Quantitiy, SuppliersID) 
+          VALUES (@PartName, @Price, @Quantitiy, @SuppliersID)",
+                sql);
+            insertCommand.Parameters.Add("@PartName", SqlDbType.NVarChar, 50, "PartName");
+            insertCommand.Parameters.Add("@Price", SqlDbType.Decimal, 18, "Price");
+            insertCommand.Parameters.Add("@Quantitiy", SqlDbType.Int, 4, "Quantitiy");
+            insertCommand.Parameters.Add("@SuppliersID", SqlDbType.Int, 4, "SuppliersID");
+
+           
+            SqlCommand updateCommand = new SqlCommand(
+                @"UPDATE Parts 
+          SET PartName = @PartName, Price = @Price, Quantitiy = @Quantitiy, SuppliersID = @SuppliersID 
+          WHERE PartID = @PartID",
+                sql);
+            updateCommand.Parameters.Add("@PartName", SqlDbType.NVarChar, 50, "PartName");
+            updateCommand.Parameters.Add("@Price", SqlDbType.Decimal, 18, "Price");
+            updateCommand.Parameters.Add("@Quantitiy", SqlDbType.Int, 4, "Quantitiy");
+            updateCommand.Parameters.Add("@SuppliersID", SqlDbType.Int, 4, "SuppliersID");
+            updateCommand.Parameters.Add("@PartID", SqlDbType.Int, 4, "PartID");
+
+          
+            SqlCommand deleteCommand = new SqlCommand(
+                @"DELETE FROM Parts WHERE PartID = @PartID",
+                sql);
+            deleteCommand.Parameters.Add("@PartID", SqlDbType.Int, 4, "PartID");
+
+            
+            adapter.InsertCommand = insertCommand;
+            adapter.UpdateCommand = updateCommand;
+            adapter.DeleteCommand = deleteCommand;
+
+            return adapter;
+        }
+
 
     }
 }

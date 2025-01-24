@@ -63,6 +63,37 @@ namespace UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _7201816173048810537976 {
+            get {
+                object obj = ResourceManager.GetObject("7201816173048810537976", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap car_vector_graphics_clip_art_spare_part_illustration_png_favpng_vmHMuEFPfq7aZejsasSHm5Gmi {
+            get {
+                object obj = ResourceManager.GetObject("car-vector-graphics-clip-art-spare-part-illustration-png-favpng-vmHMuEFPfq7aZejsa" +
+                        "sSHm5Gmi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap th__2_ {
+            get {
+                object obj = ResourceManager.GetObject("th (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2025_01_23_at_18_07_19_99224e74 {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2025-01-23 at 18.07.19_99224e74", resourceCulture);

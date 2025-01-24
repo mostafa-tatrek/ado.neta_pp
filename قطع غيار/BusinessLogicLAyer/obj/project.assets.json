@@ -1702,11 +1702,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\BusinessLogicLAyer\\BusinessLogicLAyer.csproj",
+      "projectUniqueName": "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\BusinessLogicLAyer\\BusinessLogicLAyer.csproj",
       "projectName": "BusinessLogicLAyer",
-      "projectPath": "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\BusinessLogicLAyer\\BusinessLogicLAyer.csproj",
+      "projectPath": "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\BusinessLogicLAyer\\BusinessLogicLAyer.csproj",
       "packagesPath": "C:\\Users\\CONNECT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\BusinessLogicLAyer\\obj\\",
+      "outputPath": "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\BusinessLogicLAyer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\CONNECT\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1724,8 +1724,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj": {
-              "projectPath": "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj"
+            "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj": {
+              "projectPath": "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj"
             }
           }
         }
@@ -1763,5 +1763,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

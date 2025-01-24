@@ -41,11 +41,12 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.Moccasin;
+            button1.BackColor = Color.Teal;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(788, 41);
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(12, 303);
             button1.Name = "button1";
-            button1.Size = new Size(181, 73);
+            button1.Size = new Size(190, 73);
             button1.TabIndex = 0;
             button1.Text = "الموردين";
             button1.UseVisualStyleBackColor = false;
@@ -53,9 +54,10 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.Moccasin;
+            button2.BackColor = Color.Teal;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(788, 176);
+            button2.ForeColor = SystemColors.ButtonHighlight;
+            button2.Location = new Point(12, 403);
             button2.Name = "button2";
             button2.Size = new Size(190, 73);
             button2.TabIndex = 1;
@@ -65,22 +67,25 @@
             // 
             // button3
             // 
-            button3.BackColor = Color.Moccasin;
+            button3.BackColor = Color.Teal;
             button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button3.Location = new Point(12, 379);
+            button3.ForeColor = SystemColors.ButtonHighlight;
+            button3.Location = new Point(12, 204);
             button3.Name = "button3";
             button3.Size = new Size(190, 73);
             button3.TabIndex = 2;
             button3.Text = "التقارير";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
-            button4.BackColor = Color.Moccasin;
+            button4.BackColor = Color.Teal;
             button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button4.Location = new Point(788, 379);
+            button4.ForeColor = SystemColors.ButtonHighlight;
+            button4.Location = new Point(12, 495);
             button4.Name = "button4";
-            button4.Size = new Size(180, 73);
+            button4.Size = new Size(190, 73);
             button4.TabIndex = 5;
             button4.Text = "الخروج";
             button4.UseVisualStyleBackColor = false;
@@ -88,9 +93,10 @@
             // 
             // button5
             // 
-            button5.BackColor = Color.Moccasin;
+            button5.BackColor = Color.Teal;
             button5.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button5.Location = new Point(12, 176);
+            button5.ForeColor = SystemColors.ButtonHighlight;
+            button5.Location = new Point(12, 107);
             button5.Name = "button5";
             button5.Size = new Size(190, 73);
             button5.TabIndex = 4;
@@ -100,31 +106,33 @@
             // 
             // button6
             // 
-            button6.BackColor = Color.Moccasin;
+            button6.BackColor = Color.Teal;
             button6.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button6.Location = new Point(12, 41);
+            button6.ForeColor = SystemColors.ButtonHighlight;
+            button6.Location = new Point(12, 12);
             button6.Name = "button6";
             button6.Size = new Size(190, 73);
             button6.TabIndex = 3;
             button6.Text = "القطع";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.WhatsApp_Image_2025_01_23_at_18_07_19_99224e74;
-            pictureBox1.Location = new Point(-20, -3);
+            pictureBox1.Location = new Point(208, -3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1248, 664);
+            pictureBox1.Size = new Size(1223, 664);
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(367, -3);
+            label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(410, -3);
             label1.Name = "label1";
-            label1.Size = new Size(282, 28);
+            label1.Size = new Size(548, 54);
             label1.TabIndex = 7;
             label1.Text = "مرحبا بكم في معرض قطع الغيار";
             // 
@@ -132,8 +140,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(982, 567);
+            BackColor = Color.PowderBlue;
+            ClientSize = new Size(1179, 580);
             Controls.Add(label1);
             Controls.Add(button4);
             Controls.Add(button5);

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\BusinessLogicLAyer\\BusinessLogicLAyer.csproj": {}
+    "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\BusinessLogicLAyer\\BusinessLogicLAyer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\BusinessLogicLAyer\\BusinessLogicLAyer.csproj": {
+    "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\BusinessLogicLAyer\\BusinessLogicLAyer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\BusinessLogicLAyer\\BusinessLogicLAyer.csproj",
+        "projectUniqueName": "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\BusinessLogicLAyer\\BusinessLogicLAyer.csproj",
         "projectName": "BusinessLogicLAyer",
-        "projectPath": "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\BusinessLogicLAyer\\BusinessLogicLAyer.csproj",
+        "projectPath": "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\BusinessLogicLAyer\\BusinessLogicLAyer.csproj",
         "packagesPath": "C:\\Users\\CONNECT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\BusinessLogicLAyer\\obj\\",
+        "outputPath": "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\BusinessLogicLAyer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CONNECT\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj": {
-                "projectPath": "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj"
+              "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj": {
+                "projectPath": "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj": {
+    "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj",
+        "projectUniqueName": "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj",
         "projectName": "DataAccessLAyer",
-        "projectPath": "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj",
+        "projectPath": "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\DataAccessLAyer\\DataAccessLAyer.csproj",
         "packagesPath": "C:\\Users\\CONNECT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CONNECT\\source\\repos\\قطع غيار\\DataAccessLAyer\\obj\\",
+        "outputPath": "C:\\Users\\CONNECT\\Downloads\\قطع غيار\\DataAccessLAyer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CONNECT\\AppData\\Roaming\\NuGet\\NuGet.Config",
