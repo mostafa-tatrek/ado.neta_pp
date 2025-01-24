@@ -44,6 +44,7 @@
             textBox5 = new TextBox();
             label5 = new Label();
             button5 = new Button();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)CustomersGrid).BeginInit();
             SuspendLayout();
             // 
@@ -153,10 +154,10 @@
             CustomersGrid.AllowUserToResizeRows = false;
             CustomersGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             CustomersGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            CustomersGrid.Location = new Point(12, 14);
+            CustomersGrid.Location = new Point(12, 35);
             CustomersGrid.Name = "CustomersGrid";
             CustomersGrid.RowHeadersWidth = 51;
-            CustomersGrid.Size = new Size(634, 525);
+            CustomersGrid.Size = new Size(634, 504);
             CustomersGrid.TabIndex = 12;
             CustomersGrid.CellContentClick += CustomersGrid_CellContentClick_1;
             // 
@@ -207,11 +208,23 @@
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
             // 
+            // button6
+            // 
+            button6.BackColor = Color.Red;
+            button6.Location = new Point(12, -2);
+            button6.Name = "button6";
+            button6.Size = new Size(43, 31);
+            button6.TabIndex = 48;
+            button6.Text = "<";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
+            // 
             // Customers
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(982, 553);
+            Controls.Add(button6);
             Controls.Add(button5);
             Controls.Add(textBox5);
             Controls.Add(label5);
@@ -229,6 +242,7 @@
             Controls.Add(label2);
             Controls.Add(CustomersGrid);
             Name = "Customers";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Customers";
             Load += Customers_Load;
             ((System.ComponentModel.ISupportInitialize)CustomersGrid).EndInit();
@@ -254,5 +268,6 @@
         private TextBox textBox5;
         private Label label5;
         private Button button5;
+        private Button button6;
     }
 }

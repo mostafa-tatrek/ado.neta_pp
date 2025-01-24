@@ -77,7 +77,7 @@ namespace UI
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            
+
         }
         public void clearData()
         {
@@ -137,7 +137,7 @@ namespace UI
                 ||
             string.IsNullOrEmpty(PPrice.Text.Trim()) ||
                 string.IsNullOrEmpty(PQuantity.Text.Trim()) ||
-          
+
                     SuppliersComb.SelectedValue == null ||
                     CategoriesComb.SelectedValue == null)
             {
@@ -233,6 +233,13 @@ namespace UI
                 }
                 clearData();
             }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Show();
+            this.Hide();
         }
     }
 }

@@ -110,7 +110,7 @@ namespace UI
             }
             else
             {
-                
+
 
 
 
@@ -195,6 +195,13 @@ namespace UI
             textBox1.Text = "";
             textBox3.Text = "";
             customComb.SelectedValue = -1;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Show();
+            this.Hide();
         }
     }
 }

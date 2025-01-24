@@ -40,6 +40,7 @@
             button5 = new Button();
             textBox1 = new TextBox();
             customComb = new ComboBox();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)InvoicesGrid).BeginInit();
             SuspendLayout();
             // 
@@ -133,10 +134,10 @@
             // 
             InvoicesGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             InvoicesGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            InvoicesGrid.Location = new Point(6, 13);
+            InvoicesGrid.Location = new Point(6, 36);
             InvoicesGrid.Name = "InvoicesGrid";
             InvoicesGrid.RowHeadersWidth = 51;
-            InvoicesGrid.Size = new Size(540, 525);
+            InvoicesGrid.Size = new Size(540, 502);
             InvoicesGrid.TabIndex = 12;
             InvoicesGrid.CellContentClick += InvoicesGrid_CellContentClick_1;
             // 
@@ -168,11 +169,23 @@
             customComb.Size = new Size(244, 28);
             customComb.TabIndex = 29;
             // 
+            // button6
+            // 
+            button6.BackColor = Color.Red;
+            button6.Location = new Point(6, -1);
+            button6.Name = "button6";
+            button6.Size = new Size(43, 31);
+            button6.TabIndex = 48;
+            button6.Text = "<";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
+            // 
             // Invoices_v
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(982, 553);
+            Controls.Add(button6);
             Controls.Add(customComb);
             Controls.Add(button5);
             Controls.Add(button4);
@@ -186,6 +199,7 @@
             Controls.Add(label2);
             Controls.Add(InvoicesGrid);
             Name = "Invoices_v";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Invoices";
             Load += Invoices_v_Load;
             ((System.ComponentModel.ISupportInitialize)InvoicesGrid).EndInit();
@@ -207,5 +221,6 @@
         private Button button5;
         private TextBox textBox1;
         private ComboBox customComb;
+        private Button button6;
     }
 }

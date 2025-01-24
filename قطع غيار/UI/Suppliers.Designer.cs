@@ -42,6 +42,7 @@
             label3 = new Label();
             label2 = new Label();
             SuppliersGrid = new DataGridView();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)SuppliersGrid).BeginInit();
             SuspendLayout();
             // 
@@ -182,18 +183,30 @@
             SuppliersGrid.AllowUserToResizeRows = false;
             SuppliersGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             SuppliersGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            SuppliersGrid.Location = new Point(12, 20);
+            SuppliersGrid.Location = new Point(12, 41);
             SuppliersGrid.Name = "SuppliersGrid";
             SuppliersGrid.RowHeadersWidth = 51;
-            SuppliersGrid.Size = new Size(634, 525);
+            SuppliersGrid.Size = new Size(634, 504);
             SuppliersGrid.TabIndex = 28;
             SuppliersGrid.CellContentClick += SuppliersGrid_CellContentClick;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.Red;
+            button6.Location = new Point(12, 4);
+            button6.Name = "button6";
+            button6.Size = new Size(43, 31);
+            button6.TabIndex = 48;
+            button6.Text = "<";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // Suppliers
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(982, 567);
+            Controls.Add(button6);
             Controls.Add(button5);
             Controls.Add(textBox5);
             Controls.Add(label5);
@@ -209,6 +222,7 @@
             Controls.Add(label2);
             Controls.Add(SuppliersGrid);
             Name = "Suppliers";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Suppliers";
             Load += Suppliers_Load;
             ((System.ComponentModel.ISupportInitialize)SuppliersGrid).EndInit();
@@ -232,5 +246,6 @@
         private Label label3;
         private Label label2;
         private DataGridView SuppliersGrid;
+        private Button button6;
     }
 }

@@ -21,7 +21,7 @@ namespace UI
         {
             InitializeComponent();
         }
-        
+
         private void ReportGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
         }
@@ -31,6 +31,13 @@ namespace UI
             dt = BusinessLogicLAyer.BLL.GetReports();
             ReportGrid.DataSource = dt;
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Show();
+            this.Hide();
         }
     }
 }
